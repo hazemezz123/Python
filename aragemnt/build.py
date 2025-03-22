@@ -20,13 +20,13 @@ print(f"Icon file size: {os.path.getsize(icon_path)} bytes")
 
 # PyInstaller command arguments - with additional imports for customtkinter
 args = [
-    'program_new.py',                   # Main script
-    '--name=H4ck3r_File_Organizer',     # Executable name (no spaces)
-    '--onefile',                        # Single file executable
-    f'--icon={icon_path}',              # Icon path
-    '--noconsole',                      # No console window
-    '--clean',                          # Clean build
-    '--add-data=%s;.' % icon_path,      # Include icon in the package
+    'main.py',                        # Main script (entry point)
+    '--name=H4ck3r_File_Organizer',   # Executable name (no spaces)
+    '--onefile',                      # Single file executable
+    f'--icon={icon_path}',            # Icon path
+    '--noconsole',                    # No console window
+    '--clean',                        # Clean build
+    '--add-data=%s;.' % icon_path,    # Include icon in the package
     # Hidden imports for customtkinter
     '--hidden-import=customtkinter',
     '--hidden-import=PIL',
