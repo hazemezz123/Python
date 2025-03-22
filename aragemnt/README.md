@@ -100,6 +100,20 @@ To build the executable yourself:
    python build.py
    ```
 
+## GitHub Preparation
+
+The repository includes a cleanup script to prepare the codebase for GitHub:
+
+1. Run the cleanup script:
+   ```
+   python cleanup.py
+   ```
+2. This will:
+   - Remove all build artifacts and temporary files
+   - Delete PyInstaller spec files
+   - Create a proper .gitignore file
+   - Keep only the essential files needed for the project
+
 ## License
 
 This project is open source and available under the MIT License.
